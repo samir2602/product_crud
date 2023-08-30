@@ -62,6 +62,10 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('product.index') }}">{{ __('Product') }}</a>
                             </li>
+                            <?php } else {?>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('home') }}">{{ __('Shop') }}</a>
+                            </li>
                             <?php } ?>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('cart.index') }}">{{ __('Cart') }}</a>
